@@ -10,4 +10,23 @@ import UIKit
 
 class DetailInvestmentViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func test(_ sender: UIButton) {
+        do {
+            try InvestmentAPIProcessor.getPrice(for: "IBM") { (result) in
+                do {
+                    let investment = try result()
+                    print(investment)
+                } catch {
+                    print("error")
+                }
+            }
+        } catch {
+            print("error2")
+        }
+    }
+    
 }
