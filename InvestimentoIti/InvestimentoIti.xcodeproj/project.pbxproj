@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30249B562503C61100A84CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B552503C61100A84CD8 /* AppDelegate.swift */; };
-		30249B5A2503C61100A84CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B592503C61100A84CD8 /* ViewController.swift */; };
-		30249B5D2503C61100A84CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B5B2503C61100A84CD8 /* Main.storyboard */; };
 		30249B602503C61100A84CD8 /* InvestimentoIti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30249B5E2503C61100A84CD8 /* InvestimentoIti.xcdatamodeld */; };
 		30249B622503C61100A84CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30249B612503C61100A84CD8 /* Assets.xcassets */; };
-		30249B652503C61100A84CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B632503C61100A84CD8 /* LaunchScreen.storyboard */; };
 		30249B752503CA4F00A84CD8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B742503CA4F00A84CD8 /* Home.storyboard */; };
 		30249B772503CA9C00A84CD8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B762503CA9C00A84CD8 /* Wallet.storyboard */; };
 		30249B792503CAAA00A84CD8 /* FormInvestment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B782503CAAA00A84CD8 /* FormInvestment.storyboard */; };
@@ -25,17 +22,13 @@
 		30249B882503CE2600A84CD8 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B872503CE2600A84CD8 /* WalletModel.swift */; };
 		30249B8A2503CE2F00A84CD8 /* FormInvestmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B892503CE2F00A84CD8 /* FormInvestmentModel.swift */; };
 		30249B8C2503CE3D00A84CD8 /* DetailInvestmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B8B2503CE3D00A84CD8 /* DetailInvestmentModel.swift */; };
-		86C6EDEF2503D5660038C2D5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6EDEE2503D5660038C2D5 /* API.swift */; };
-		86C6EDF12503D6130038C2D5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6EDF02503D6130038C2D5 /* APIError.swift */; };
-		86C6EDF32503DB530038C2D5 /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6EDF22503DB530038C2D5 /* Investment.swift */; };
-		86C6EDF52503DDC30038C2D5 /* InvestmentAPIProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6EDF42503DDC30038C2D5 /* InvestmentAPIProcessor.swift */; };
+		30249B8F2503D29700A84CD8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B8E2503D29700A84CD8 /* UIView+Extensions.swift */; };
+		30249B902503D73900A84CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B632503C61100A84CD8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30249B522503C61100A84CD8 /* InvestimentoIti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestimentoIti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30249B552503C61100A84CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30249B592503C61100A84CD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30249B5C2503C61100A84CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30249B5F2503C61100A84CD8 /* InvestimentoIti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InvestimentoIti.xcdatamodel; sourceTree = "<group>"; };
 		30249B612503C61100A84CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30249B642503C61100A84CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,10 +45,7 @@
 		30249B872503CE2600A84CD8 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		30249B892503CE2F00A84CD8 /* FormInvestmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInvestmentModel.swift; sourceTree = "<group>"; };
 		30249B8B2503CE3D00A84CD8 /* DetailInvestmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInvestmentModel.swift; sourceTree = "<group>"; };
-		86C6EDEE2503D5660038C2D5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		86C6EDF02503D6130038C2D5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		86C6EDF22503DB530038C2D5 /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
-		86C6EDF42503DDC30038C2D5 /* InvestmentAPIProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAPIProcessor.swift; sourceTree = "<group>"; };
+		30249B8E2503D29700A84CD8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +78,10 @@
 		30249B542503C61100A84CD8 /* InvestimentoIti */ = {
 			isa = PBXGroup;
 			children = (
+				30249B662503C61100A84CD8 /* Info.plist */,
 				30249B6F2503C97A00A84CD8 /* CoreData Models */,
 				30249B6E2503C96400A84CD8 /* Support Files */,
 				30249B6D2503C95900A84CD8 /* Features */,
-				30249B592503C61100A84CD8 /* ViewController.swift */,
-				30249B5B2503C61100A84CD8 /* Main.storyboard */,
 			);
 			path = InvestimentoIti;
 			sourceTree = "<group>";
@@ -111,8 +100,8 @@
 		30249B6E2503C96400A84CD8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				30249B8D2503D28300A84CD8 /* Extensions */,
 				30249B612503C61100A84CD8 /* Assets.xcassets */,
-				30249B662503C61100A84CD8 /* Info.plist */,
 				30249B632503C61100A84CD8 /* LaunchScreen.storyboard */,
 				30249B552503C61100A84CD8 /* AppDelegate.swift */,
 			);
@@ -160,7 +149,6 @@
 		30249B732503C9FF00A84CD8 /* DetailtInvestment */ = {
 			isa = PBXGroup;
 			children = (
-				86C6EDED2503D4F90038C2D5 /* API */,
 				30249B7B2503CBF100A84CD8 /* DetailInvestment.storyboard */,
 				30249B832503CD9300A84CD8 /* DetailInvestmentViewController.swift */,
 				30249B8B2503CE3D00A84CD8 /* DetailInvestmentModel.swift */,
@@ -168,15 +156,12 @@
 			path = DetailtInvestment;
 			sourceTree = "<group>";
 		};
-		86C6EDED2503D4F90038C2D5 /* API */ = {
+		30249B8D2503D28300A84CD8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				86C6EDEE2503D5660038C2D5 /* API.swift */,
-				86C6EDF02503D6130038C2D5 /* APIError.swift */,
-				86C6EDF22503DB530038C2D5 /* Investment.swift */,
-				86C6EDF42503DDC30038C2D5 /* InvestmentAPIProcessor.swift */,
+				30249B8E2503D29700A84CD8 /* UIView+Extensions.swift */,
 			);
-			path = API;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,13 +222,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30249B652503C61100A84CD8 /* LaunchScreen.storyboard in Resources */,
+				30249B902503D73900A84CD8 /* LaunchScreen.storyboard in Resources */,
 				30249B792503CAAA00A84CD8 /* FormInvestment.storyboard in Resources */,
+				30249B752503CA4F00A84CD8 /* Home.storyboard in Resources */,
 				30249B772503CA9C00A84CD8 /* Wallet.storyboard in Resources */,
 				30249B622503C61100A84CD8 /* Assets.xcassets in Resources */,
-				30249B5D2503C61100A84CD8 /* Main.storyboard in Resources */,
 				30249B7C2503CBF100A84CD8 /* DetailInvestment.storyboard in Resources */,
-				30249B752503CA4F00A84CD8 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,16 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				30249B8A2503CE2F00A84CD8 /* FormInvestmentModel.swift in Sources */,
-				86C6EDF12503D6130038C2D5 /* APIError.swift in Sources */,
-				30249B5A2503C61100A84CD8 /* ViewController.swift in Sources */,
+				30249B8F2503D29700A84CD8 /* UIView+Extensions.swift in Sources */,
 				30249B8C2503CE3D00A84CD8 /* DetailInvestmentModel.swift in Sources */,
 				30249B562503C61100A84CD8 /* AppDelegate.swift in Sources */,
-				86C6EDEF2503D5660038C2D5 /* API.swift in Sources */,
-				86C6EDF32503DB530038C2D5 /* Investment.swift in Sources */,
 				30249B602503C61100A84CD8 /* InvestimentoIti.xcdatamodeld in Sources */,
 				30249B7E2503CD7100A84CD8 /* HomeViewController.swift in Sources */,
 				30249B862503CE1D00A84CD8 /* HomeModel.swift in Sources */,
-				86C6EDF52503DDC30038C2D5 /* InvestmentAPIProcessor.swift in Sources */,
 				30249B802503CD7900A84CD8 /* WalletViewController.swift in Sources */,
 				30249B842503CD9300A84CD8 /* DetailInvestmentViewController.swift in Sources */,
 				30249B882503CE2600A84CD8 /* WalletModel.swift in Sources */,
@@ -275,14 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30249B5B2503C61100A84CD8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30249B5C2503C61100A84CD8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30249B632503C61100A84CD8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,7 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "InvestimentoIti/Support Files/Info.plist";
+				INFOPLIST_FILE = InvestimentoIti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "InvestimentoIti/Support Files/Info.plist";
+				INFOPLIST_FILE = InvestimentoIti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
