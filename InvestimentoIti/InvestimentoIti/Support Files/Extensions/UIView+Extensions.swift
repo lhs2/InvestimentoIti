@@ -43,4 +43,36 @@ extension UIView {
             prepareForInterfaceBuilder()
         }
     }
+    
+    func setBackgroundGradient(firstColor: UIColor, secondColor: UIColor) {
+        let customLayerName = "gradient-background"
+        let gradient = CAGradientLayer()
+
+        gradient.frame = self.bounds
+
+        gradient.colors = [firstColor.cgColor, secondColor.cgColor]
+        gradient.locations = [0.0, 1]
+        
+        gradient.name = customLayerName
+        
+        if let sublayers = self.layer.sublayers {
+            for layer in sublayers {
+                if layer.name == customLayerName {
+                    layer.removeFromSuperlayer()
+                    break
+                }
+            }
+        }
+        
+        self.layer.insertSublayer(gradient, at: 0)
+    }
+    
+    func applyDefaultBackgroundColor() {
+        if let firstBackgroundColor = UIColor(named: "orangeIti"),
+            let secondBackgroundColor = UIColor(named: "pinkIti") {
+            
+            self.setBackgroundGradient(firstColor: firstBackgroundColor,
+                                      secondColor: secondBackgroundColor)
+        }
+    }
 }

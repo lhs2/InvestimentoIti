@@ -24,6 +24,11 @@
 		30249B8C2503CE3D00A84CD8 /* DetailInvestmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B8B2503CE3D00A84CD8 /* DetailInvestmentModel.swift */; };
 		30249B8F2503D29700A84CD8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30249B8E2503D29700A84CD8 /* UIView+Extensions.swift */; };
 		30249B902503D73900A84CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30249B632503C61100A84CD8 /* LaunchScreen.storyboard */; };
+		865DE3CD2503F5B600890056 /* InvestmentAPIProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865DE3C92503F5B600890056 /* InvestmentAPIProcessor.swift */; };
+		865DE3CE2503F5B600890056 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865DE3CA2503F5B600890056 /* APIError.swift */; };
+		865DE3CF2503F5B600890056 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865DE3CB2503F5B600890056 /* Quote.swift */; };
+		865DE3D02503F5B600890056 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865DE3CC2503F5B600890056 /* API.swift */; };
+		865DE3D725040A3400890056 /* UIViewController+CoreDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865DE3D625040A3400890056 /* UIViewController+CoreDataContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		30249B892503CE2F00A84CD8 /* FormInvestmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInvestmentModel.swift; sourceTree = "<group>"; };
 		30249B8B2503CE3D00A84CD8 /* DetailInvestmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInvestmentModel.swift; sourceTree = "<group>"; };
 		30249B8E2503D29700A84CD8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		865DE3C92503F5B600890056 /* InvestmentAPIProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentAPIProcessor.swift; sourceTree = "<group>"; };
+		865DE3CA2503F5B600890056 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		865DE3CB2503F5B600890056 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		865DE3CC2503F5B600890056 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		865DE3D625040A3400890056 /* UIViewController+CoreDataContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreDataContext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,7 @@
 		30249B732503C9FF00A84CD8 /* DetailtInvestment */ = {
 			isa = PBXGroup;
 			children = (
+				865DE3C82503F5B600890056 /* API */,
 				30249B7B2503CBF100A84CD8 /* DetailInvestment.storyboard */,
 				30249B832503CD9300A84CD8 /* DetailInvestmentViewController.swift */,
 				30249B8B2503CE3D00A84CD8 /* DetailInvestmentModel.swift */,
@@ -160,8 +171,20 @@
 			isa = PBXGroup;
 			children = (
 				30249B8E2503D29700A84CD8 /* UIView+Extensions.swift */,
+				865DE3D625040A3400890056 /* UIViewController+CoreDataContext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		865DE3C82503F5B600890056 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				865DE3C92503F5B600890056 /* InvestmentAPIProcessor.swift */,
+				865DE3CA2503F5B600890056 /* APIError.swift */,
+				865DE3CB2503F5B600890056 /* Quote.swift */,
+				865DE3CC2503F5B600890056 /* API.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,16 +262,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				30249B8A2503CE2F00A84CD8 /* FormInvestmentModel.swift in Sources */,
+				865DE3D725040A3400890056 /* UIViewController+CoreDataContext.swift in Sources */,
 				30249B8F2503D29700A84CD8 /* UIView+Extensions.swift in Sources */,
 				30249B8C2503CE3D00A84CD8 /* DetailInvestmentModel.swift in Sources */,
 				30249B562503C61100A84CD8 /* AppDelegate.swift in Sources */,
+				865DE3D02503F5B600890056 /* API.swift in Sources */,
 				30249B602503C61100A84CD8 /* InvestimentoIti.xcdatamodeld in Sources */,
 				30249B7E2503CD7100A84CD8 /* HomeViewController.swift in Sources */,
+				865DE3CF2503F5B600890056 /* Quote.swift in Sources */,
+				865DE3CD2503F5B600890056 /* InvestmentAPIProcessor.swift in Sources */,
 				30249B862503CE1D00A84CD8 /* HomeModel.swift in Sources */,
 				30249B802503CD7900A84CD8 /* WalletViewController.swift in Sources */,
 				30249B842503CD9300A84CD8 /* DetailInvestmentViewController.swift in Sources */,
 				30249B882503CE2600A84CD8 /* WalletModel.swift in Sources */,
 				30249B822503CD8400A84CD8 /* FormInvestmentViewController.swift in Sources */,
+				865DE3CE2503F5B600890056 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = devboost.InvestimentoIti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,7 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = devboost.InvestimentoIti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

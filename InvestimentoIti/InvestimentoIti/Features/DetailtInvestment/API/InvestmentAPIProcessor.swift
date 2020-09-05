@@ -13,7 +13,7 @@ struct InvestmentAPIProcessor {
     private static let baseHost: String = "www.alphavantage.co"
     private static let basePath: String = "/query"
 
-    static func getPrice(for symbol: String, completion: @escaping (() throws -> Investment) -> Void) throws {
+    static func getPrice(for symbol: String, completion: @escaping (() throws -> Quote.Investment) -> Void) throws {
         
         guard let request = self.createRequest(for: symbol) else {
             throw APIError.invalidRequest
@@ -54,7 +54,7 @@ struct InvestmentAPIProcessor {
         return request
     }
 
-    private static func process(error: Error, completion: (() throws -> Investment) -> Void) {
+    private static func process(error: Error, completion: (() throws -> Quote.Investment) -> Void) {
         completion( { throw error } )
     }
 }

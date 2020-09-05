@@ -10,7 +10,7 @@ import Foundation
  
 struct API {
 
-    static func send(request: URLRequest, completion: @escaping (() throws -> Investment?) -> Void) throws {
+    static func send(request: URLRequest, completion: @escaping (() throws -> Quote.Investment?) -> Void) throws {
         
         if API.isNetworkReachable() {
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -23,7 +23,7 @@ struct API {
         }
     }
     
-    private static func processResponse(_ data: Data?, _ response: URLResponse?, _ error: Error?, completion: (() throws -> Investment?) -> Void) {
+    private static func processResponse(_ data: Data?, _ response: URLResponse?, _ error: Error?, completion: (() throws -> Quote.Investment?) -> Void) {
         if error != nil {
             completion({ throw APIError.taskError })
             return
