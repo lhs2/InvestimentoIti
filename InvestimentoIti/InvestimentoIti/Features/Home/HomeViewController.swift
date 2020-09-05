@@ -13,15 +13,22 @@ class HomeViewController: UIViewController {
   @IBOutlet weak var scrollOptions: UIScrollView!
   @IBOutlet weak var labelSaldo: UILabel!
   @IBOutlet weak var buttonEye: UIButton!
-    
+  @IBOutlet weak var imageviewPerson: UIImageView!
+  
   // MARK: - Properties
   var person =  Person()
+  
   // MARK: - Super Methods
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    
+    setupView()
+  }
+  // MARK: - Methods
+
+  private func setupView() {
     buttonEye.isSelected = true
     showHideSaldo(buttonEye)
+    imageviewPerson.image = UIImage(named: person.photo)
   }
   
   // MARK: - IBActions

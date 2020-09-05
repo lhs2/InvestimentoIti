@@ -40,7 +40,7 @@
                                     <action selector="callRight:" destination="TLC-u7-Nek" eventType="touchUpInside" id="kRl-jy-dZ5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhu-yl-GQr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhu-yl-GQr">
                                 <rect key="frame" x="80" y="38" width="254" height="51.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,7 +52,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DW5-Pr-CNd">
                                         <rect key="frame" x="26" y="24" width="84" height="84"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eric" highlightedImage="eric" translatesAutoresizingMaskIntoConstraints="NO" id="ENU-OF-3uU">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ENU-OF-3uU">
                                                 <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -469,6 +469,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonEye" destination="6ae-E8-L8Y" id="lW9-Bg-bKt"/>
+                        <outlet property="imageviewPerson" destination="ENU-OF-3uU" id="RNJ-df-IhU"/>
                         <outlet property="labelSaldo" destination="s8B-tO-0KO" id="nWh-CQ-k0P"/>
                         <outlet property="scrollOptions" destination="U5a-zQ-edf" id="KAJ-y8-DMZ"/>
                         <segue destination="Hj9-T0-5Ws" kind="show" identifier="showWallet" id="iyo-Ya-5zz"/>
@@ -492,7 +493,6 @@
     <resources>
         <image name="arrow.up.circle.fill" catalog="system" width="128" height="121"/>
         <image name="checkmark.seal" catalog="system" width="128" height="122"/>
-        <image name="eric" width="640" height="640"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="eye.slash" catalog="system" width="128" height="86"/>
         <image name="greaterthan" catalog="system" width="128" height="111"/>
