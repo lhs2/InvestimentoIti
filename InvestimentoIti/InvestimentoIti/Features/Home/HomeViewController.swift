@@ -9,11 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
+    // MARK: - IBOutlets
   @IBOutlet weak var scrollOptions: UIScrollView!
   @IBOutlet weak var labelSaldo: UILabel!
   @IBOutlet weak var buttonEye: UIButton!
-  
+    
+  // MARK: - Properties
+  var person =  Person()
+  // MARK: - Super Methods
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
@@ -21,6 +24,7 @@ class HomeViewController: UIViewController {
     showHideSaldo(buttonEye)
   }
   
+  // MARK: - IBActions
   @IBAction func callLeft(_ sender: Any) {
     let title = "futura implementação botão esquerda"
     let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
@@ -41,11 +45,36 @@ class HomeViewController: UIViewController {
     performSegue(withIdentifier: "showWallet", sender: self)
     
   }
+  
+  @IBAction func callCadastro(_ sender: UIButton) {
+    let title = "chamada da view de cadastro"
+    let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+    let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    alert.addAction(okAction)
+    present(alert, animated: true, completion: nil)
+  }
+  
+  @IBAction func callTransfer(_ sender: UIButton) {
+    let title = "chamada da view de transaferencia"
+    let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+    let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    alert.addAction(okAction)
+    present(alert, animated: true, completion: nil)
+  }
+  
+  @IBAction func callFavorite(_ sender: UIButton) {
+    let title = "chamada da view de favoritos"
+    let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+    let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    alert.addAction(okAction)
+    present(alert, animated: true, completion: nil)
+  }
+  
   @IBAction func showHideSaldo(_ sender: UIButton) {
     buttonEye.isSelected.toggle()
     
     if buttonEye.isSelected {
-      labelSaldo.text = "R$ 20.000,00"
+      labelSaldo.text = person.formattedBalance
     } else {
       labelSaldo.text = "- - - -"
     }
