@@ -10,4 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+  @IBOutlet weak var scrollOptions: UIScrollView!
+  
+  @IBAction func callWallet(_ sender: Any) {
+    performSegue(withIdentifier: "showWallet", sender: self)
+    
+  }
 }
