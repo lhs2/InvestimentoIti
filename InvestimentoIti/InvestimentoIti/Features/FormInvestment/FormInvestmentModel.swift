@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class FormInvestmentModel {
+    //var investment: Investiment?
+    
+    
+    func updateInvestment(with active: String, quantity:String, price:String, startDate: String) {
+       
+    }
+    
+}

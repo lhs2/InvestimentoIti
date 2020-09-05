@@ -17,14 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOU-Wa-4p2">
-                                <rect key="frame" x="16" y="621" width="343" height="30"/>
+                                <rect key="frame" x="16" y="601" width="343" height="50"/>
                                 <color key="backgroundColor" name="orangeIti"/>
-                                <state key="normal" title="Button">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZQs-Rv-VQh"/>
+                                </constraints>
+                                <state key="normal" title="Investir">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -33,25 +36,161 @@
                                         <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="performSave:" destination="z2i-R6-qyy" eventType="touchUpInside" id="Pjs-P5-gZ4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYM-P2-1gC">
+                                <rect key="frame" x="16" y="49" width="343" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="bht-fb-KJO"/>
+                                </constraints>
+                                <string key="text">Preencha as informações sobre
+a sua nova compra de ações</string>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-jA-40R">
+                                <rect key="frame" x="0.0" y="98" width="375" height="495"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBQ-5U-pdg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="495"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZS-SJ-NnV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="352"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHb-9F-3bO" customClass="ItiFormUIView" customModule="InvestimentoIti" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="0.0" width="359" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="aIN-f0-nSA"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Ativo"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="active"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOptionalField" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d88-pt-2e0" customClass="ItiFormUIView" customModule="InvestimentoIti" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="176" width="359" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="Sbq-FS-tsI"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="price"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Preço de Compra"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCurrency" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-MS-Gtk" customClass="ItiFormUIView" customModule="InvestimentoIti" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="264" width="359" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="xwJ-EA-uN7"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Data de Início"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOptionalField" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZC0-mY-K6c" customClass="ItiFormUIView" customModule="InvestimentoIti" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="88" width="359" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="LhG-OH-iMv"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Quantidade"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="quantity"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOptionalField" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="YEY-MS-Gtk" secondAttribute="bottom" constant="8" id="2uA-0a-fs1"/>
+                                                    <constraint firstItem="YEY-MS-Gtk" firstAttribute="leading" secondItem="TZS-SJ-NnV" secondAttribute="leading" constant="8" id="9fd-Fc-NO8"/>
+                                                    <constraint firstItem="ZC0-mY-K6c" firstAttribute="leading" secondItem="TZS-SJ-NnV" secondAttribute="leading" constant="8" id="BZm-w2-x8F"/>
+                                                    <constraint firstItem="ZC0-mY-K6c" firstAttribute="top" secondItem="RHb-9F-3bO" secondAttribute="bottom" constant="8" id="Kpq-iL-3LJ"/>
+                                                    <constraint firstItem="YEY-MS-Gtk" firstAttribute="top" secondItem="d88-pt-2e0" secondAttribute="bottom" constant="8" id="PUM-SU-NJq"/>
+                                                    <constraint firstItem="RHb-9F-3bO" firstAttribute="top" secondItem="TZS-SJ-NnV" secondAttribute="top" id="UrS-te-WCO"/>
+                                                    <constraint firstItem="d88-pt-2e0" firstAttribute="leading" secondItem="TZS-SJ-NnV" secondAttribute="leading" constant="8" id="bhe-dW-Rmw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RHb-9F-3bO" secondAttribute="trailing" constant="8" id="cQC-5F-HOO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YEY-MS-Gtk" secondAttribute="trailing" constant="8" id="fq9-i2-es4"/>
+                                                    <constraint firstItem="RHb-9F-3bO" firstAttribute="leading" secondItem="TZS-SJ-NnV" secondAttribute="leading" constant="8" id="iHc-AN-dY2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZC0-mY-K6c" secondAttribute="trailing" constant="8" id="jIg-9B-VkU"/>
+                                                    <constraint firstItem="d88-pt-2e0" firstAttribute="top" secondItem="ZC0-mY-K6c" secondAttribute="bottom" constant="8" id="vdf-Nw-WmT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="d88-pt-2e0" secondAttribute="trailing" constant="8" id="yOQ-VM-5do"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="TZS-SJ-NnV" firstAttribute="top" secondItem="uBQ-5U-pdg" secondAttribute="top" id="5MY-Qc-2oz"/>
+                                            <constraint firstItem="TZS-SJ-NnV" firstAttribute="height" secondItem="uBQ-5U-pdg" secondAttribute="height" priority="250" id="AtF-u6-q0D"/>
+                                            <constraint firstItem="TZS-SJ-NnV" firstAttribute="leading" secondItem="uBQ-5U-pdg" secondAttribute="leading" id="gIi-ef-05Z"/>
+                                            <constraint firstItem="TZS-SJ-NnV" firstAttribute="width" secondItem="uBQ-5U-pdg" secondAttribute="width" id="hMr-N2-udj"/>
+                                            <constraint firstAttribute="bottom" secondItem="TZS-SJ-NnV" secondAttribute="bottom" id="kWf-sh-5l4"/>
+                                            <constraint firstAttribute="trailing" secondItem="TZS-SJ-NnV" secondAttribute="trailing" id="pRn-gm-T8t"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="j9T-E8-Lyh"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="xR6-T0-z2R"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uBQ-5U-pdg" firstAttribute="leading" secondItem="QdO-jA-40R" secondAttribute="leading" id="D0W-E7-PLS"/>
+                                    <constraint firstAttribute="bottom" secondItem="uBQ-5U-pdg" secondAttribute="bottom" id="Wx9-MO-xQR"/>
+                                    <constraint firstAttribute="trailing" secondItem="uBQ-5U-pdg" secondAttribute="trailing" id="Zjj-HY-LIM"/>
+                                    <constraint firstItem="uBQ-5U-pdg" firstAttribute="top" secondItem="QdO-jA-40R" secondAttribute="top" id="d9h-ed-B6X"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74y-l9-yeY">
+                                <rect key="frame" x="326" y="19" width="25" height="18.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="Qk8-GH-qJU"/>
+                                    <constraint firstAttribute="height" constant="25" id="u0L-Ha-sAL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="multiply" catalog="system"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="k7h-oU-3I7" firstAttribute="trailing" secondItem="aYM-P2-1gC" secondAttribute="trailing" constant="16" id="2Ha-Og-pjX"/>
+                            <constraint firstItem="QdO-jA-40R" firstAttribute="top" secondItem="aYM-P2-1gC" secondAttribute="bottom" constant="8" id="5dB-9D-hgg"/>
+                            <constraint firstItem="74y-l9-yeY" firstAttribute="top" secondItem="k7h-oU-3I7" secondAttribute="top" constant="16" id="FDa-KO-r4P"/>
                             <constraint firstItem="MOU-Wa-4p2" firstAttribute="leading" secondItem="k7h-oU-3I7" secondAttribute="leading" constant="16" id="MOG-4Y-5Ca"/>
+                            <constraint firstItem="k7h-oU-3I7" firstAttribute="trailing" secondItem="74y-l9-yeY" secondAttribute="trailing" constant="24" id="O3g-yl-uzj"/>
+                            <constraint firstItem="QdO-jA-40R" firstAttribute="leading" secondItem="k7h-oU-3I7" secondAttribute="leading" id="QLA-8i-r16"/>
                             <constraint firstItem="k7h-oU-3I7" firstAttribute="bottom" secondItem="MOU-Wa-4p2" secondAttribute="bottom" constant="16" id="Z4D-Jv-FoN"/>
                             <constraint firstItem="k7h-oU-3I7" firstAttribute="trailing" secondItem="MOU-Wa-4p2" secondAttribute="trailing" constant="16" id="aTe-uq-I8S"/>
+                            <constraint firstItem="aYM-P2-1gC" firstAttribute="leading" secondItem="k7h-oU-3I7" secondAttribute="leading" constant="16" id="cla-xg-MnN"/>
+                            <constraint firstItem="k7h-oU-3I7" firstAttribute="trailing" secondItem="QdO-jA-40R" secondAttribute="trailing" id="en9-K1-MUq"/>
+                            <constraint firstItem="aYM-P2-1gC" firstAttribute="top" secondItem="74y-l9-yeY" secondAttribute="bottom" constant="8" id="i1M-Vy-N59"/>
+                            <constraint firstItem="MOU-Wa-4p2" firstAttribute="top" secondItem="QdO-jA-40R" secondAttribute="bottom" constant="8" id="ra3-Jc-wc5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k7h-oU-3I7"/>
                     </view>
+                    <connections>
+                        <outlet property="activeForm" destination="RHb-9F-3bO" id="3CM-3p-yvS"/>
+                        <outlet property="priceForm" destination="d88-pt-2e0" id="o7f-Yl-OMb"/>
+                        <outlet property="quantityForm" destination="ZC0-mY-K6c" id="XgE-8J-pqX"/>
+                        <outlet property="startDateForm" destination="YEY-MS-Gtk" id="djN-aD-cnY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAB-PF-zdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32" y="115"/>
+            <point key="canvasLocation" x="-32.799999999999997" y="114.69265367316342"/>
         </scene>
     </scenes>
     <resources>
+        <image name="multiply" catalog="system" width="64" height="54"/>
         <namedColor name="orangeIti">
-            <color red="0.86814719438552856" green="0.45427465438842773" blue="0.18813714385032654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.86799997091293335" green="0.45399999618530273" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
